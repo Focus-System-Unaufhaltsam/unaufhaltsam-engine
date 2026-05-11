@@ -1,44 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UNAUFHALTSAM Engine</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNAUFHALTSAM ENGINE | Small-Batch Focus Challenges</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --brand-purple: #8b5cf6; --brand-dark: #0f172a; }
+        body { background-color: var(--brand-dark); color: #f8fafc; font-family: 'Inter', sans-serif; }
+        .gradient-text { background: linear-gradient(135deg, #ddd6fe 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .bg-purple-accent { background-color: var(--brand-purple); }
+        .card-glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hover-scale { transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .hover-scale:hover { transform: scale(1.03); }
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
-<body class="bg-neutral-950 text-neutral-100 min-h-screen flex flex-col">
-  <main class="flex-1">
-    <section class="max-w-4xl mx-auto px-6 py-20">
-      <p class="text-sm uppercase tracking-[0.2em] text-amber-400 mb-4">UNAUFHALTSAM Engine</p>
-      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Small-batch challenge systems for creators, coaches and niche brands.</h1>
-      <p class="text-lg text-neutral-300 mb-10">Clear scope. One-time setup. Optional support only when needed.</p>
+<body class="antialiased text-sm">
 
-      <div class="rounded-2xl border border-neutral-800 bg-neutral-900/60 p-6 mb-10">
-        <h2 class="text-2xl font-semibold mb-4">Pricing</h2>
-        <ul class="space-y-3 text-neutral-200">
-          <li class="flex items-center justify-between gap-4"><span>Template Skin Setup</span><span class="font-semibold">from €490</span></li>
-          <li class="flex items-center justify-between gap-4"><span>Custom Fun Build</span><span class="font-semibold">from €990</span></li>
-          <li class="flex items-center justify-between gap-4"><span>Bigger brand work</span><span class="font-semibold">only by fit</span></li>
-        </ul>
-      </div>
+    <nav class="sticky top-0 z-50 py-4 px-6 border-b border-white/10 bg-slate-900/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-xl font-black tracking-tighter uppercase">
+                UNAUFHALTSAM <span class="text-purple-500">Engine</span>
+            </div>
+            <a href="#pricing" class="hidden md:block bg-purple-accent hover:bg-purple-600 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
+                Check Availability
+            </a>
+        </div>
+    </nav>
 
-      <a
-        href="https://focus-system-unaufhaltsam.github.io/system-master-template/"
-        class="inline-flex items-center gap-3 rounded-xl bg-amber-400 text-neutral-950 px-6 py-3 font-semibold hover:bg-amber-300 transition"
-      >
-        <span>Play Live Demo</span>
-      </a>
+    <header class="relative pt-20 pb-32 px-6 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-indigo-600 rounded-full blur-[100px]"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight tracking-tight">
+                The Focused <br>
+                <span class="gradient-text">Challenge Engine.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-400 mb-10 max-w-3xl mx-auto leading-relaxed">
+                Built for creators, coaches and niche brands who want a focused, lightweight challenge — not a bloated software project.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://focus-system-unaufhaltsam.github.io/system-master-template/" target="_blank" rel="noopener" class="bg-purple-accent hover:bg-purple-600 text-white text-lg font-bold py-4 px-10 rounded-xl transition-all shadow-lg shadow-purple-500/20">
+                    Play Live Demo
+                </a>
+                <a href="#pricing" class="bg-white/10 hover:bg-white/20 text-white text-lg font-bold py-4 px-10 rounded-xl transition-all border border-white/10">
+                    Pricing & Tiers
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="pricing" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-5xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 uppercase tracking-tighter">Pricing & Setup</h2>
+            <p class="text-slate-400">Clear scope. One-time setup. Optional support only when needed.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto text-xs">
+            <div class="card-glass p-10 rounded-3xl border-white/5 flex flex-col">
+                <h3 class="text-2xl font-bold mb-2 uppercase tracking-tight">Template Skin</h3>
+                <p class="text-slate-400 mb-6">Rapid branded deployment</p>
+                <div class="text-4xl font-black mb-8">from € 490 <span class="text-sm font-normal text-slate-500">one-time</span></div>
+                <ul class="text-left space-y-4 mb-10 text-slate-300 flex-grow">
+                    <li class="flex items-start gap-3"><i class="fas fa-check text-green-500 mt-1"></i> Skin Adaptation (Colors, Logos, Text)</li>
+                    <li class="flex items-start gap-3"><i class="fas fa-check text-green-500 mt-1"></i> Firebase Leaderboard Setup</li>
+                    <li class="flex items-start gap-3"><i class="fas fa-check text-green-500 mt-1"></i> Deployment on GitHub or a prepared client URL</li>
+                </ul>
+                <a href="mailto:eddiekeschflow@gmail.com?subject=Inquiry: Template Skin Build" class="block text-center w-full py-3 px-6 bg-white/10 hover:bg-white/20 rounded-xl font-bold transition">Request Build</a>
+            </div>
+
+            <div class="card-glass p-10 rounded-3xl border-purple-500/50 relative shadow-2xl shadow-purple-500/10 flex flex-col">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-purple-accent text-white text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-widest">Best Fit</div>
+                <h3 class="text-2xl font-bold mb-2 uppercase tracking-tight">Custom Fun Build</h3>
+                <p class="text-slate-400 mb-6">Unique mechanics & deep branding</p>
+                <div class="text-4xl font-black mb-8">from € 990 <span class="text-sm font-normal text-slate-500">one-time</span></div>
+                <ul class="text-left space-y-4 mb-10 text-slate-300 flex-grow">
+                    <li class="flex items-start gap-3"><i class="fas fa-check text-purple-500 mt-1"></i> Everything in Template Skin Setup</li>
+                    <li class="flex items-start gap-3"><i class="fas fa-check text-purple-500 mt-1"></i> Custom gameplay tweaks & logic</li>
+                    <li class="flex items-start gap-3"><i class="fas fa-check text-purple-500 mt-1"></i> Optional score export</li>
+                </ul>
+                <a href="mailto:eddiekeschflow@gmail.com?subject=Inquiry: Custom Fun Build" class="block text-center w-full py-3 px-6 bg-purple-accent hover:bg-purple-600 rounded-xl font-bold transition shadow-lg shadow-purple-500/30">Start Custom Project</a>
+            </div>
+        </div>
+        <div class="mt-16 text-center"><p class="text-slate-500 italic">"Bigger brand work only if the creative fit is right."</p></div>
     </section>
-  </main>
 
-  <footer class="border-t border-neutral-800">
-    <div class="max-w-4xl mx-auto px-6 py-6 flex flex-wrap items-center gap-4 text-sm text-neutral-300">
-      <a href="impressum.html" class="hover:text-white">Legal Notice</a>
-      <span aria-hidden="true">•</span>
-      <a href="datenschutz.html" class="hover:text-white">Privacy Policy</a>
-      <span aria-hidden="true">•</span>
-      <a href="mailto:eddiekeschflow@gmail.com" class="hover:text-white">Contact</a>
-    </div>
-  </footer>
+    <footer class="py-16 px-6 border-t border-white/5 text-center">
+        <div class="max-w-7xl mx-auto text-[10px]">
+            <div class="text-lg font-black tracking-tighter uppercase mb-6">UNAUFHALTSAM <span class="text-purple-500">Engine</span></div>
+            <p class="text-slate-500 mb-6 max-w-md mx-auto italic">Small-batch challenge systems for creators, coaches and niche brands.</p>
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 font-bold uppercase tracking-widest text-slate-500">
+                <a href="impressum.html" class="hover:text-white transition">Legal Notice</a>
+                <a href="datenschutz.html" class="hover:text-white transition">Privacy Policy</a>
+                <a href="mailto:eddiekeschflow@gmail.com" class="hover:text-white transition">Contact</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
